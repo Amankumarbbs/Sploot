@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "31baf9c4-1857-4f7f-aab8-98e8c6478a01",
+		"name": "aman project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27295866"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Aman\",\r\n    \"lastName\":\"Kumar\",\r\n    \"email\":\"Aman@gmail.com\",\r\n    \"password\":\"Aman@123\",\r\n    \"age\": \"21\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://splootarticle.onrender.com/api/signup",
+					"protocol": "https",
+					"host": [
+						"splootarticle",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"Aman@gmail.com\",\r\n    \"password\":\"Aman@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://splootarticle.onrender.com/api/login",
+					"protocol": "https",
+					"host": [
+						"splootarticle",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Nzc0NDFhYThlYjhhZGFkYWRlOGNiZSIsImZpcnN0TmFtZSI6IlJleWEiLCJsYXN0TmFtZSI6IlNhZGh1IiwiZW1haWwiOiJiYWt3YXNAZ21haWwuY29tIiwiYWdlIjoxLCJpYXQiOjE2ODU1Mzc4MTgsImV4cCI6MTY4NTU0NTAxOH0.aG37C1DAiTgXJW3wVV-A3hcklcRlQ74mVkIDZJhT8vM",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"John\",\r\n    \"lastName\":\"Doe\",\r\n    \"age\":\"21\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://splootarticle.onrender.com/api/users/64774bf02795e5e7d96eb4a5",
+					"protocol": "https",
+					"host": [
+						"splootarticle",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"64774bf02795e5e7d96eb4a5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create article",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Nzc1MTE4Mjc5NWU1ZTdkOTZlYjRiYSIsImZpcnN0TmFtZSI6IkFtYW4iLCJsYXN0TmFtZSI6Ikt1bWFyIiwiZW1haWwiOiJBbWFuQGdtYWlsLmNvbSIsImFnZSI6MjEsImlhdCI6MTY4NTU0MTE2OSwiZXhwIjoxNjg1NTQ4MzY5fQ.Y7S3oh-IRhPpQf8KIzP9BXMHiHe6goqPOxH3yO64exA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"My doggo loves evening walks!\",\r\n    \"content\": \"I went out with my dog today and had a wonderful time.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://splootarticle.onrender.com/api/users/647751182795e5e7d96eb4ba/articles",
+					"protocol": "https",
+					"host": [
+						"splootarticle",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"647751182795e5e7d96eb4ba",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all articles",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Nzc1MTE4Mjc5NWU1ZTdkOTZlYjRiYSIsImZpcnN0TmFtZSI6IkFtYW4iLCJsYXN0TmFtZSI6Ikt1bWFyIiwiZW1haWwiOiJBbWFuQGdtYWlsLmNvbSIsImFnZSI6MjEsImlhdCI6MTY4NTU0MTE2OSwiZXhwIjoxNjg1NTQ4MzY5fQ.Y7S3oh-IRhPpQf8KIzP9BXMHiHe6goqPOxH3yO64exA",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://splootarticle.onrender.com/api/articles",
+					"protocol": "https",
+					"host": [
+						"splootarticle",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
