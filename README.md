@@ -1,7 +1,7 @@
 # Sploot Assignment <img align="right" src="https://github.com/Amankumarbbs/sploot/assets/34418398/f681f3b6-acb2-4e6d-b367-d8e447f1b720" height="100" width="100">
 
 This repository is for a project as a part of assessment for Sploot. 
-It is hosted using [render.](https://splootarticle.onrender.com)
+It is hosted using [render.](https://splootarticle.onrender.com/api/articles)
 
 <br clear="right"/>
 
